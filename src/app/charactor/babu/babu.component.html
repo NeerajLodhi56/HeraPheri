@@ -1,0 +1,24 @@
+<h2 [ngStyle]="{'color':clrvalue}">hello babu bhaiya</h2>
+<h3>this is interpolation binding: these name {{name}} come throgh the interpolation </h3>
+<h1>Employee details</h1>
+
+<table border="1" width="400" height="200">
+
+<tr>
+    <th>id</th>
+    <th>name</th>
+    <th>gender</th>
+    <th>salary</th>
+    <th>age</th>
+    <th>course</th>
+</tr>
+<tr *ngFor=" let s of students ">
+<td>{{s.id}}</td>
+<td>{{s.name}}</td>
+<td>{{s.gender}}</td>
+<td>{{s.salary}}</td>
+<td>{{s.age}}</td>
+<td>{{s.course}}</td>
+
+</tr>
+</table>

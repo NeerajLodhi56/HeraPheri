@@ -1,0 +1,25 @@
+<h2>here we seen the *ngIf example</h2>
+<div *ngIf="showvalue" [ngStyle]="{'color':clrv}">this msg show when the showvalue=true , otherwise we can't see the any value on the web page </div>
+
+<div *ngIf="showmsg">there is another msg where the showmsg=false; then there msg not seen</div>
+
+<h3 [ngStyle]="{'color':clr}">Example of *ngIf else </h3>
+
+<div *ngIf="value; else elsvalue ">this msg seen when ngif condition true</div>
+<ng-template #elsvalue>showing this msg when ngif condition fails</ng-template>
+
+<h4>example of ngif with then else statement</h4>
+<div *ngIf="msgif ; then msgthen ; else msgelse "> massage show when if condition satisfy</div>
+<ng-template #msgthen> this is then msg when condition true</ng-template>
+<ng-template #msgelse> this is else msg</ng-template>
+
+<h2 [ngStyle]="{'color':'green'}">[ngSwitch] statement</h2>
+<div [ngSwitch]="switchvalue">
+<div *ngSwitchCase="1">the value of switch is 1</div>
+<div *ngSwitchCase="2">the value of switch is 2</div>
+<div *ngSwitchCase="3">the value of switch is 3</div>
+<div *ngSwitchCase="4">the value of switch is 4</div>
+<div *ngSwitchCase="5">the value of switch is 5</div>
+<div *ngSwitchDefault >the value of switch is default</div>
+
+</div>
